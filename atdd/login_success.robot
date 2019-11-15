@@ -3,12 +3,13 @@ Library   SeleniumLibrary
 Test Teardown  Close Browser
 
 *** Variables ***
-${URL}   http://localhost:8080/demo/
+${URL}   http://localhost:8090/demo/
 ${BROWSER}   chrome
 
 *** Test Case ***
 Login success
-    เข้ามาหน้า login
+#    เข้ามาหน้า login
+    Open Browser    ${URL}     ${BROWSER}
     login ด้วยผู้ใช้งานชื่อ somkiat
     ต้องแสดงหน้า welcome
 
