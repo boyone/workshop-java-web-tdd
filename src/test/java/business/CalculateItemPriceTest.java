@@ -17,7 +17,7 @@ public class CalculateItemPriceTest {
         double actualTotalPrice = order.calculateTotalPrice();
 
         // Assert
-        double expectedTotalPrice = 79.90;
+        double expectedTotalPrice = 79.00;
         assertEquals(expectedTotalPrice, actualTotalPrice);
     }
 
